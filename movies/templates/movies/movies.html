@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Movies</title>
+
+        <!-- CAN ADD CSS STILL mm. BUT WHERE?-->
+    </head>
+    <body>
+        <h1>Movies</h1>
+        <ul>
+            {% for movie in movies %}
+                <li>{{movie.title}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>
