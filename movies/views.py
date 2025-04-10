@@ -10,7 +10,7 @@ def movies(request):
     return render(request, "movies/movies.html", {'movies': data})
 
 def home(request):
-    return HttpResponse("Home page")
+    return render(request, 'movies/index.html')
 
 def detail(request, id):
     data = Movie.objects.get(pk=id)
